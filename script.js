@@ -29,6 +29,13 @@ function generatePassword() {
   console.log(includeNumeric);
   console.log(includeSpecialCharacters);
 
+  let lowercaseList = "abcdefghijklmnopqrstuvwxyz";
+  let uppercaseList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let numericList = "0123456789";
+  let specialCharactersList = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+  console.log(specialCharactersList.charAt(2));
+  
+
 
   
   
