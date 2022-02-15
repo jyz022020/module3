@@ -33,13 +33,27 @@ function generatePassword() {
   let uppercaseList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let numericList = "0123456789";
   let specialCharactersList = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-  console.log(specialCharactersList.charAt(2));
-  
+  let passwordSource = "";
 
+  if (includeLowercase){
+    passwordSource += lowercaseList;
+  }
+  if (includeUppercase) {
+    passwordSource += uppercaseList;
+  }
+  if(includeNumeric) {
+    passwordSource += numericList;
+  }
+  if(includeSpecialCharacters){
+    passwordSource += specialCharactersList;
+  }
 
-  
-  
-  
+  password = "";
+  for (var i = 0; i < passwordLength; i++){
+    password += passwordSource.charAt(Math.floor(Math.random() * (passwordSource.length)));
+  }
+
+  return password;
 }
 
 // Add event listener to generate button
