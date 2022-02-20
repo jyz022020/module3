@@ -28,5 +28,6 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 #Mock-Up
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/jyz022020/module3/tree/gh-pages/Assets/images/mock.png)
+
 
