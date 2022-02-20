@@ -27,7 +27,5 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-#Mock-Up
-![alt text](https://github.com/jyz022020/module3/tree/gh-pages/Assets/images/mock.png)
-
-
+project link: https://jyz022020.github.io/module3/
+git repo link: https://github.com/jyz022020/module3
