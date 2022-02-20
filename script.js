@@ -18,16 +18,23 @@ function generatePassword() {
     //}
   }
 
-  let includeLowercase = confirm ("Do you want to include lowercase?");
-  let includeUppercase = confirm ("Do you want to include uppercase?");
-  let includeNumeric = confirm ("Do you want to include numeric?");
-  let includeSpecialCharacters = confirm ("Do you want to include special characters?");
+  let passwordTypeValidation = false;
+  let includeLowercase = false;
+  let includeUppercase = false;
+  let includeNumeric = false;
+  let includeSpecialCharacters = false;
 
-  console.log(passwordLength);
-  console.log(includeLowercase);
-  console.log(includeUppercase);
-  console.log(includeNumeric);
-  console.log(includeSpecialCharacters);
+  while (!passwordTypeValidation) {
+    includeLowercase = confirm ("Do you want to include lowercase?");
+    includeUppercase = confirm ("Do you want to include uppercase?");
+    includeNumeric = confirm ("Do you want to include numeric?");
+    includeSpecialCharacters = confirm ("Do you want to include special characters?");
+    if (includeLowercase || includeUppercase || includeNumeric || includeSpecialCharacters) {
+      passwordTypeValidation = true;
+    } else {
+      alert("Error: Please select at least 1 password type!")
+    }
+  }
 
   let lowercaseList = "abcdefghijklmnopqrstuvwxyz";
   let uppercaseList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
